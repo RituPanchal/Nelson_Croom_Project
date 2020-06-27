@@ -10,7 +10,6 @@ export default class courseListService {
 
             try {
                 courseListItems = await axios.get('https://learn.accountingcpd.net/ACPD/API/Test/SampleObject');
-                //console.log("axiosFunction", courseListItems);
 
                 return resolve(courseListItems);
             }
